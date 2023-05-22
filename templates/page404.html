@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">WC_corp</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="first active"><a href="/" accesskey="1" title="">Главная</a></li>
+				<li><a href="/contact" accesskey="2" title="">О нас</a></li>
+				<li><a href="#" accesskey="3" title="">Отзывы</a></li>
+				<li><a href="#" accesskey="4" title="">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+{{ super() }}
+<h6>Страница не найдена, вернуться на <a href="/">главную</a> страницу. </h6>
+{% endblock %}

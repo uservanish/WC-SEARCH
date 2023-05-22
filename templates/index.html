@@ -1,0 +1,116 @@
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.7.1.min.js')}}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.slidertron-1.1.js')}}"></script>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Narrow:400,700" rel="stylesheet" type="text/css" />
+<link href="{{ url_for('static', filename='css/default.css')}}" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="https://www.youtube.com/watch?v=PkT0PJwy8mI">WC_corp</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="first active"><a href="#" accesskey="1" title="">Главная</a></li>
+				<li><a href="about.html" accesskey="2" title="">О нас</a></li>
+				<li><a href="/contact" accesskey="3" title="">Отзывы</a></li>
+				<li><a href="/login" accesskey="4" title="">Авторизация</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="banner">
+	<div id="slider">
+		<div class="viewer">
+			<div class="reel">
+				<div class="slide">
+					<a class="link" href="http://nodethirtythree.com/#slidertron-slide-1">Full story ...</a> <img src="/static/images/pic01.jpg" alt="" width="1024" height="600" /> </div>
+				<div class="slide">
+					<a class="link" href="http://nodethirtythree.com/#slidertron-slide-2">Full story ...</a> <img src="/static/images/pic02.jpg" alt="" width="1024" height="600" /> </div>
+			</div>
+		</div>
+		<div class="indicator">
+			<ul>
+				<li class="active">1</li>
+				<li>2</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('#slider').slidertron({
+			viewerSelector: '.viewer',
+			reelSelector: '.viewer .reel',
+			slidesSelector: '.viewer .reel .slide',
+			advanceDelay: 3000,
+			speed: 'slow',
+			navPreviousSelector: '.previous-button',
+			navNextSelector: '.next-button',
+			indicatorSelector: '.indicator ul li',
+			slideLinkSelector: '.link'
+		});
+	</script> 
+</div>
+
+<div class="map">
+	<div class="texts"><H1>Найди ближайшее место на карте</H1></div>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7818d0e91ce3221c975fec9f53ead604f61ddce44053f408cdb1b91d8123ba28&amp;width=2000&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+</div>
+<div id="wrapper">
+	<div id="page" class="container">
+		<div id="content"> <img src="/static/images/pic04.jpg" width="235" height="235" alt="" />
+			<h2>Teamlead</h2>
+			<p>Когда вы приходите в компанию по разработке мобильных приложений со своей идеей, вам будет назначен<strong> менеджер проекта (PM),</strong>который будет вашим помощником и связующим звеном с разработчиками. Менеджер проекта берет на себя ответственность за проект от начала до конца в рамках согласованного бюджета, времени и качества.  Команда разработчиков мобильных приложений предлагает <a href="https://www.affde.com/ru/mobile-app-development-team.html">советы, структуры и роли</a></p>
+		</div>
+		<div id="sidebar">
+			<div>
+				<h2>Интересные статьи</h2>
+				<ul class="style1">
+					<li class="first">
+						<p><a href="https://habr.com/ru/articles/726516/">Свое мобильное приложение: от идеи до разработки, продвижения и развития</a></p>
+						<span class="posted">8 hours ago</span> </li>
+					<li>
+						<p><a href="https://vc.ru/dev/59202-razrabotka-mobilnogo-prilozheniya-ot-idei-do-rezultata">Разработка мобильного приложения: от идеи до результата</a></p>
+						<span class="posted">1 day ago</span> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="featured" class="container">
+		<h2 class="title">Разработчики проекта</h2>
+		<div id="fbox1"> <img src="/static/images/pic04.jpg" width="235" height="235" alt="" />
+			<h2>Тарикулиев Ш.К.</h2>
+			<p>Проектный менеджер</p>
+		</div>
+		<div id="fbox2"> <img src="/static/images/pic05.jpg" width="235" height="235" alt="" />
+			<h2>Ильин Н.А.</h2>
+			<p>Дизайнер, бизнес-аналитик</p>
+		</div>
+		<div id="fbox3"> <img src="/static/images/pic06.jpg" width="235" height="235" alt="" />
+			<h2>Коротков В.О.</h2>
+			<p>QA инженер,  Front-end</p>
+		</div>
+		<div id="fbox1"> <img src="/static/images/pic07.jpg" width="235" height="235" alt="" />
+			<h2>Цевенков Д.О.</h2>
+			<p>Front-end разработчик</p>
+		</div>
+		<div id="fbox1"> <img src="/static/images/pic08.jpg" width="235" height="235" alt="" />
+			<h2>Иваник А.М.</h2>
+			<p>тестировщик</p>
+		</div>
+		<div id="fbox1"> <img src="/static/images/pic09.jpg" width="235" height="235" alt="" />
+			<h2>Ченуша Р.В.</h2>
+			<p>Back-end разработчик + QA инженер, тестировщик</p>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<p>Copyright (c) 2023</p>
+</div>
+</body>
+</html>
